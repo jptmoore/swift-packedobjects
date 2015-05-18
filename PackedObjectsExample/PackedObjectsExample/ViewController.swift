@@ -8,33 +8,49 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
+    @IBOutlet weak var xmlPicker: UIPickerView!
+    
+    var xmlfiles : [String] = []
+    var path : String = ""
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return xmlfiles.count
+    }
+    
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return xmlfiles[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let filename = xmlfiles[row]
+        let prefix = split(filename) {$0 == "."}[0]
+        
+        let xml = String(contentsOfFile: path+filename, encoding: NSUTF8StringEncoding, error: nil)
+        let schemaFile = path + prefix + ".xsd"
+        
+        let po = PackedObjects(schema: schemaFile)
+        if let data = po.encode(xml!) as NSData? {
+            if let result = po.decode(data) as String? {
+                println(result)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var data: NSData
-        var xml: String
-        
-        let path = NSBundle.mainBundle().pathForResource("helloworld", ofType: "xsd")
-        let po = PackedObjects(schema: path!)
-        
-        if let data = po.encode("<foo>hello</foo>") as NSData? {
-            if let xml = po.decode(data) as String? {
-                println(xml)
-            }
-        }
-
-        if let data = po.encode("<foo>world</foo>") as NSData? {
-            if let xml = po.decode(data) as String? {
-                println(xml)
-            }
-        }
-        
-        // unsafe wrapping
-        println(po.decode(po.encode("<foo>hello world</foo>")!)!)
-        
+        let fileManager = NSFileManager.defaultManager()
+        path = NSBundle.mainBundle().bundlePath + "/"
+        let files = fileManager.contentsOfDirectoryAtPath(path, error: nil) as? [String]
+        xmlfiles = files!.filter({$0.hasSuffix(".xml")})
 
     }
 

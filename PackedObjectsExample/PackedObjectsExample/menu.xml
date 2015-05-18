@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kiosk>
+  <order>
+    <breakfast>
+      <name>Early Bird</name>
+      <items>
+        <beverage>Latte</beverage>
+        <main>Smoked Salmon and Egg Scramble</main>
+        <sides>
+          <side>Tomatoes</side>
+          <side>Eggs</side>
+          <side>Apricots</side>
+        </sides>
+      </items>
+    </breakfast>
+  </order>
+  <order>
+    <breakfast>
+      <name>Full English</name>
+      <items>
+        <main>Egg Scramble and Smoked Bacon</main>
+        <sides>
+          <side>Tortilla</side>
+          <side>Beans</side>
+          <side>Cheese</side>
+        </sides>
+      </items>
+    </breakfast>
+  </order>
+  <order>
+    <lunch>
+      <name>Panini Sandwich</name>
+      <items>
+        <beverage>Beer</beverage>
+        <main>Ham and Cheese Panini</main>
+      </items>
+      </lunch>
+  </order>
+</kiosk>

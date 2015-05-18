@@ -7,6 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52F9E4001B0A2FF3005CFB19 /* helloworld.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E3FF1B0A2FF3005CFB19 /* helloworld.xml */; };
+		52F9E4291B0A30A6005CFB19 /* baseball.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4011B0A30A6005CFB19 /* baseball.xml */; };
+		52F9E42A1B0A30A6005CFB19 /* baseball.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4021B0A30A6005CFB19 /* baseball.xsd */; };
+		52F9E42B1B0A30A6005CFB19 /* currency.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4031B0A30A6005CFB19 /* currency.xml */; };
+		52F9E42C1B0A30A6005CFB19 /* currency.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4041B0A30A6005CFB19 /* currency.xsd */; };
+		52F9E42D1B0A30A6005CFB19 /* euro.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4051B0A30A6005CFB19 /* euro.xml */; };
+		52F9E42E1B0A30A6005CFB19 /* euro.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4061B0A30A6005CFB19 /* euro.xsd */; };
+		52F9E42F1B0A30A6005CFB19 /* foonull.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4071B0A30A6005CFB19 /* foonull.xml */; };
+		52F9E4301B0A30A6005CFB19 /* foonull.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4081B0A30A6005CFB19 /* foonull.xsd */; };
+		52F9E4311B0A30A6005CFB19 /* inr.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4091B0A30A6005CFB19 /* inr.xml */; };
+		52F9E4321B0A30A6005CFB19 /* inr.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E40A1B0A30A6005CFB19 /* inr.xsd */; };
+		52F9E4331B0A30A6005CFB19 /* iptel-devinfo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E40B1B0A30A6005CFB19 /* iptel-devinfo.xml */; };
+		52F9E4341B0A30A6005CFB19 /* iptel-devinfo.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E40C1B0A30A6005CFB19 /* iptel-devinfo.xsd */; };
+		52F9E4351B0A30A6005CFB19 /* iptel-ethinfo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E40D1B0A30A6005CFB19 /* iptel-ethinfo.xml */; };
+		52F9E4361B0A30A6005CFB19 /* iptel-ethinfo.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E40E1B0A30A6005CFB19 /* iptel-ethinfo.xsd */; };
+		52F9E4371B0A30A6005CFB19 /* menu.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E40F1B0A30A6005CFB19 /* menu.xml */; };
+		52F9E4381B0A30A6005CFB19 /* menu.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4101B0A30A6005CFB19 /* menu.xsd */; };
+		52F9E4391B0A30A6005CFB19 /* personnel.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4111B0A30A6005CFB19 /* personnel.xml */; };
+		52F9E43A1B0A30A6005CFB19 /* personnel.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4121B0A30A6005CFB19 /* personnel.xsd */; };
+		52F9E43B1B0A30A6005CFB19 /* ping.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4131B0A30A6005CFB19 /* ping.xml */; };
+		52F9E43C1B0A30A6005CFB19 /* ping.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4141B0A30A6005CFB19 /* ping.xsd */; };
+		52F9E43D1B0A30A6005CFB19 /* purchaseorder.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4151B0A30A6005CFB19 /* purchaseorder.xml */; };
+		52F9E43E1B0A30A6005CFB19 /* purchaseorder.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4161B0A30A6005CFB19 /* purchaseorder.xsd */; };
+		52F9E43F1B0A30A6005CFB19 /* router-addnet.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4171B0A30A6005CFB19 /* router-addnet.xml */; };
+		52F9E4401B0A30A6005CFB19 /* router-addnet.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4181B0A30A6005CFB19 /* router-addnet.xsd */; };
+		52F9E4411B0A30A6005CFB19 /* router-disc.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4191B0A30A6005CFB19 /* router-disc.xml */; };
+		52F9E4421B0A30A6005CFB19 /* router-disc.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E41A1B0A30A6005CFB19 /* router-disc.xsd */; };
+		52F9E4431B0A30A6005CFB19 /* router-qos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E41B1B0A30A6005CFB19 /* router-qos.xml */; };
+		52F9E4441B0A30A6005CFB19 /* router-qos.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E41C1B0A30A6005CFB19 /* router-qos.xsd */; };
+		52F9E4451B0A30A6005CFB19 /* sensor.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E41D1B0A30A6005CFB19 /* sensor.xml */; };
+		52F9E4461B0A30A6005CFB19 /* sensor.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E41E1B0A30A6005CFB19 /* sensor.xsd */; };
+		52F9E4471B0A30A6005CFB19 /* switch-config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E41F1B0A30A6005CFB19 /* switch-config.xml */; };
+		52F9E4481B0A30A6005CFB19 /* switch-config.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4201B0A30A6005CFB19 /* switch-config.xsd */; };
+		52F9E4491B0A30A6005CFB19 /* temper-sens.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4211B0A30A6005CFB19 /* temper-sens.xml */; };
+		52F9E44A1B0A30A6005CFB19 /* temper-sens.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4221B0A30A6005CFB19 /* temper-sens.xsd */; };
+		52F9E44B1B0A30A6005CFB19 /* timestamps.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4231B0A30A6005CFB19 /* timestamps.xml */; };
+		52F9E44C1B0A30A6005CFB19 /* timestamps.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4241B0A30A6005CFB19 /* timestamps.xsd */; };
+		52F9E44D1B0A30A6005CFB19 /* unsafenumbers.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4251B0A30A6005CFB19 /* unsafenumbers.xml */; };
+		52F9E44E1B0A30A6005CFB19 /* unsafenumbers.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4261B0A30A6005CFB19 /* unsafenumbers.xsd */; };
+		52F9E44F1B0A30A6005CFB19 /* vehicles.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4271B0A30A6005CFB19 /* vehicles.xml */; };
+		52F9E4501B0A30A6005CFB19 /* vehicles.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 52F9E4281B0A30A6005CFB19 /* vehicles.xsd */; };
 		52FC5F321B0790360048AAA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5F311B0790360048AAA8 /* AppDelegate.swift */; };
 		52FC5F341B0790360048AAA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC5F331B0790360048AAA8 /* ViewController.swift */; };
 		52FC5F371B0790360048AAA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FC5F351B0790360048AAA8 /* Main.storyboard */; };
@@ -41,6 +82,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52F9E3FF1B0A2FF3005CFB19 /* helloworld.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = helloworld.xml; sourceTree = "<group>"; };
+		52F9E4011B0A30A6005CFB19 /* baseball.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = baseball.xml; sourceTree = "<group>"; };
+		52F9E4021B0A30A6005CFB19 /* baseball.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = baseball.xsd; sourceTree = "<group>"; };
+		52F9E4031B0A30A6005CFB19 /* currency.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = currency.xml; sourceTree = "<group>"; };
+		52F9E4041B0A30A6005CFB19 /* currency.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = currency.xsd; sourceTree = "<group>"; };
+		52F9E4051B0A30A6005CFB19 /* euro.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = euro.xml; sourceTree = "<group>"; };
+		52F9E4061B0A30A6005CFB19 /* euro.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = euro.xsd; sourceTree = "<group>"; };
+		52F9E4071B0A30A6005CFB19 /* foonull.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = foonull.xml; sourceTree = "<group>"; };
+		52F9E4081B0A30A6005CFB19 /* foonull.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = foonull.xsd; sourceTree = "<group>"; };
+		52F9E4091B0A30A6005CFB19 /* inr.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = inr.xml; sourceTree = "<group>"; };
+		52F9E40A1B0A30A6005CFB19 /* inr.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = inr.xsd; sourceTree = "<group>"; };
+		52F9E40B1B0A30A6005CFB19 /* iptel-devinfo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "iptel-devinfo.xml"; sourceTree = "<group>"; };
+		52F9E40C1B0A30A6005CFB19 /* iptel-devinfo.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "iptel-devinfo.xsd"; sourceTree = "<group>"; };
+		52F9E40D1B0A30A6005CFB19 /* iptel-ethinfo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "iptel-ethinfo.xml"; sourceTree = "<group>"; };
+		52F9E40E1B0A30A6005CFB19 /* iptel-ethinfo.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "iptel-ethinfo.xsd"; sourceTree = "<group>"; };
+		52F9E40F1B0A30A6005CFB19 /* menu.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = menu.xml; sourceTree = "<group>"; };
+		52F9E4101B0A30A6005CFB19 /* menu.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = menu.xsd; sourceTree = "<group>"; };
+		52F9E4111B0A30A6005CFB19 /* personnel.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = personnel.xml; sourceTree = "<group>"; };
+		52F9E4121B0A30A6005CFB19 /* personnel.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = personnel.xsd; sourceTree = "<group>"; };
+		52F9E4131B0A30A6005CFB19 /* ping.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ping.xml; sourceTree = "<group>"; };
+		52F9E4141B0A30A6005CFB19 /* ping.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ping.xsd; sourceTree = "<group>"; };
+		52F9E4151B0A30A6005CFB19 /* purchaseorder.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = purchaseorder.xml; sourceTree = "<group>"; };
+		52F9E4161B0A30A6005CFB19 /* purchaseorder.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = purchaseorder.xsd; sourceTree = "<group>"; };
+		52F9E4171B0A30A6005CFB19 /* router-addnet.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "router-addnet.xml"; sourceTree = "<group>"; };
+		52F9E4181B0A30A6005CFB19 /* router-addnet.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "router-addnet.xsd"; sourceTree = "<group>"; };
+		52F9E4191B0A30A6005CFB19 /* router-disc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "router-disc.xml"; sourceTree = "<group>"; };
+		52F9E41A1B0A30A6005CFB19 /* router-disc.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "router-disc.xsd"; sourceTree = "<group>"; };
+		52F9E41B1B0A30A6005CFB19 /* router-qos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "router-qos.xml"; sourceTree = "<group>"; };
+		52F9E41C1B0A30A6005CFB19 /* router-qos.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "router-qos.xsd"; sourceTree = "<group>"; };
+		52F9E41D1B0A30A6005CFB19 /* sensor.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sensor.xml; sourceTree = "<group>"; };
+		52F9E41E1B0A30A6005CFB19 /* sensor.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sensor.xsd; sourceTree = "<group>"; };
+		52F9E41F1B0A30A6005CFB19 /* switch-config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "switch-config.xml"; sourceTree = "<group>"; };
+		52F9E4201B0A30A6005CFB19 /* switch-config.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "switch-config.xsd"; sourceTree = "<group>"; };
+		52F9E4211B0A30A6005CFB19 /* temper-sens.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "temper-sens.xml"; sourceTree = "<group>"; };
+		52F9E4221B0A30A6005CFB19 /* temper-sens.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "temper-sens.xsd"; sourceTree = "<group>"; };
+		52F9E4231B0A30A6005CFB19 /* timestamps.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = timestamps.xml; sourceTree = "<group>"; };
+		52F9E4241B0A30A6005CFB19 /* timestamps.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = timestamps.xsd; sourceTree = "<group>"; };
+		52F9E4251B0A30A6005CFB19 /* unsafenumbers.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = unsafenumbers.xml; sourceTree = "<group>"; };
+		52F9E4261B0A30A6005CFB19 /* unsafenumbers.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = unsafenumbers.xsd; sourceTree = "<group>"; };
+		52F9E4271B0A30A6005CFB19 /* vehicles.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vehicles.xml; sourceTree = "<group>"; };
+		52F9E4281B0A30A6005CFB19 /* vehicles.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vehicles.xsd; sourceTree = "<group>"; };
 		52FC5F2C1B0790360048AAA8 /* PackedObjectsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PackedObjectsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FC5F301B0790360048AAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52FC5F311B0790360048AAA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +219,47 @@
 		52FC5F2F1B0790360048AAA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				52F9E4011B0A30A6005CFB19 /* baseball.xml */,
+				52F9E4021B0A30A6005CFB19 /* baseball.xsd */,
+				52F9E4031B0A30A6005CFB19 /* currency.xml */,
+				52F9E4041B0A30A6005CFB19 /* currency.xsd */,
+				52F9E4051B0A30A6005CFB19 /* euro.xml */,
+				52F9E4061B0A30A6005CFB19 /* euro.xsd */,
+				52F9E4071B0A30A6005CFB19 /* foonull.xml */,
+				52F9E4081B0A30A6005CFB19 /* foonull.xsd */,
+				52F9E4091B0A30A6005CFB19 /* inr.xml */,
+				52F9E40A1B0A30A6005CFB19 /* inr.xsd */,
+				52F9E40B1B0A30A6005CFB19 /* iptel-devinfo.xml */,
+				52F9E40C1B0A30A6005CFB19 /* iptel-devinfo.xsd */,
+				52F9E40D1B0A30A6005CFB19 /* iptel-ethinfo.xml */,
+				52F9E40E1B0A30A6005CFB19 /* iptel-ethinfo.xsd */,
+				52F9E40F1B0A30A6005CFB19 /* menu.xml */,
+				52F9E4101B0A30A6005CFB19 /* menu.xsd */,
+				52F9E4111B0A30A6005CFB19 /* personnel.xml */,
+				52F9E4121B0A30A6005CFB19 /* personnel.xsd */,
+				52F9E4131B0A30A6005CFB19 /* ping.xml */,
+				52F9E4141B0A30A6005CFB19 /* ping.xsd */,
+				52F9E4151B0A30A6005CFB19 /* purchaseorder.xml */,
+				52F9E4161B0A30A6005CFB19 /* purchaseorder.xsd */,
+				52F9E4171B0A30A6005CFB19 /* router-addnet.xml */,
+				52F9E4181B0A30A6005CFB19 /* router-addnet.xsd */,
+				52F9E4191B0A30A6005CFB19 /* router-disc.xml */,
+				52F9E41A1B0A30A6005CFB19 /* router-disc.xsd */,
+				52F9E41B1B0A30A6005CFB19 /* router-qos.xml */,
+				52F9E41C1B0A30A6005CFB19 /* router-qos.xsd */,
+				52F9E41D1B0A30A6005CFB19 /* sensor.xml */,
+				52F9E41E1B0A30A6005CFB19 /* sensor.xsd */,
+				52F9E41F1B0A30A6005CFB19 /* switch-config.xml */,
+				52F9E4201B0A30A6005CFB19 /* switch-config.xsd */,
+				52F9E4211B0A30A6005CFB19 /* temper-sens.xml */,
+				52F9E4221B0A30A6005CFB19 /* temper-sens.xsd */,
+				52F9E4231B0A30A6005CFB19 /* timestamps.xml */,
+				52F9E4241B0A30A6005CFB19 /* timestamps.xsd */,
+				52F9E4251B0A30A6005CFB19 /* unsafenumbers.xml */,
+				52F9E4261B0A30A6005CFB19 /* unsafenumbers.xsd */,
+				52F9E4271B0A30A6005CFB19 /* vehicles.xml */,
+				52F9E4281B0A30A6005CFB19 /* vehicles.xsd */,
+				52F9E3FF1B0A2FF3005CFB19 /* helloworld.xml */,
 				52FC5F831B0792050048AAA8 /* helloworld.xsd */,
 				52FC5F7F1B0791CE0048AAA8 /* packedobjectsDataTypes.xsd */,
 				52FC5F801B0791CE0048AAA8 /* packedobjectsSchemaTypes.xsd */,
@@ -270,12 +393,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F9E42A1B0A30A6005CFB19 /* baseball.xsd in Resources */,
+				52F9E43B1B0A30A6005CFB19 /* ping.xml in Resources */,
 				52FC5F811B0791CE0048AAA8 /* packedobjectsDataTypes.xsd in Resources */,
+				52F9E4301B0A30A6005CFB19 /* foonull.xsd in Resources */,
+				52F9E4361B0A30A6005CFB19 /* iptel-ethinfo.xsd in Resources */,
+				52F9E4481B0A30A6005CFB19 /* switch-config.xsd in Resources */,
+				52F9E4291B0A30A6005CFB19 /* baseball.xml in Resources */,
+				52F9E4351B0A30A6005CFB19 /* iptel-ethinfo.xml in Resources */,
+				52F9E42F1B0A30A6005CFB19 /* foonull.xml in Resources */,
+				52F9E4381B0A30A6005CFB19 /* menu.xsd in Resources */,
+				52F9E4421B0A30A6005CFB19 /* router-disc.xsd in Resources */,
 				52FC5F371B0790360048AAA8 /* Main.storyboard in Resources */,
+				52F9E4331B0A30A6005CFB19 /* iptel-devinfo.xml in Resources */,
+				52F9E4441B0A30A6005CFB19 /* router-qos.xsd in Resources */,
+				52F9E4431B0A30A6005CFB19 /* router-qos.xml in Resources */,
+				52F9E4391B0A30A6005CFB19 /* personnel.xml in Resources */,
+				52F9E4401B0A30A6005CFB19 /* router-addnet.xsd in Resources */,
+				52F9E42E1B0A30A6005CFB19 /* euro.xsd in Resources */,
 				52FC5F3C1B0790360048AAA8 /* LaunchScreen.xib in Resources */,
 				52FC5F391B0790360048AAA8 /* Images.xcassets in Resources */,
+				52F9E4321B0A30A6005CFB19 /* inr.xsd in Resources */,
+				52F9E42D1B0A30A6005CFB19 /* euro.xml in Resources */,
+				52F9E43A1B0A30A6005CFB19 /* personnel.xsd in Resources */,
 				52FC5F821B0791CE0048AAA8 /* packedobjectsSchemaTypes.xsd in Resources */,
+				52F9E44F1B0A30A6005CFB19 /* vehicles.xml in Resources */,
+				52F9E4341B0A30A6005CFB19 /* iptel-devinfo.xsd in Resources */,
+				52F9E44E1B0A30A6005CFB19 /* unsafenumbers.xsd in Resources */,
+				52F9E4491B0A30A6005CFB19 /* temper-sens.xml in Resources */,
+				52F9E4001B0A2FF3005CFB19 /* helloworld.xml in Resources */,
+				52F9E42C1B0A30A6005CFB19 /* currency.xsd in Resources */,
+				52F9E43F1B0A30A6005CFB19 /* router-addnet.xml in Resources */,
+				52F9E4501B0A30A6005CFB19 /* vehicles.xsd in Resources */,
+				52F9E4451B0A30A6005CFB19 /* sensor.xml in Resources */,
+				52F9E4371B0A30A6005CFB19 /* menu.xml in Resources */,
+				52F9E4471B0A30A6005CFB19 /* switch-config.xml in Resources */,
+				52F9E44C1B0A30A6005CFB19 /* timestamps.xsd in Resources */,
+				52F9E44B1B0A30A6005CFB19 /* timestamps.xml in Resources */,
+				52F9E43E1B0A30A6005CFB19 /* purchaseorder.xsd in Resources */,
+				52F9E43D1B0A30A6005CFB19 /* purchaseorder.xml in Resources */,
+				52F9E43C1B0A30A6005CFB19 /* ping.xsd in Resources */,
+				52F9E44A1B0A30A6005CFB19 /* temper-sens.xsd in Resources */,
+				52F9E42B1B0A30A6005CFB19 /* currency.xml in Resources */,
+				52F9E4461B0A30A6005CFB19 /* sensor.xsd in Resources */,
 				52FC5F841B0792050048AAA8 /* helloworld.xsd in Resources */,
+				52F9E4311B0A30A6005CFB19 /* inr.xml in Resources */,
+				52F9E44D1B0A30A6005CFB19 /* unsafenumbers.xml in Resources */,
+				52F9E4411B0A30A6005CFB19 /* router-disc.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +677,7 @@
 				52FC5F4D1B0790370048AAA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52FC5F4E1B0790370048AAA8 /* Build configuration list for PBXNativeTarget "PackedObjectsExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +686,7 @@
 				52FC5F501B0790370048AAA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
