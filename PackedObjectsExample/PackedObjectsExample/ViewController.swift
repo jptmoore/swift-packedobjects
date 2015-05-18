@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
+    
+    @IBOutlet weak var xmlView: UITextView!
     @IBOutlet weak var xmlPicker: UIPickerView!
     
     var xmlfiles : [String] = []
@@ -38,7 +40,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         let po = PackedObjects(schema: schemaFile)
         if let data = po.encode(xml!) as NSData? {
             if let result = po.decode(data) as String? {
-                println(result)
+                xmlView.text = result
             }
         }
     }
@@ -47,6 +49,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        xmlView.text = ""
         let fileManager = NSFileManager.defaultManager()
         path = NSBundle.mainBundle().bundlePath + "/"
         let files = fileManager.contentsOfDirectoryAtPath(path, error: nil) as? [String]
