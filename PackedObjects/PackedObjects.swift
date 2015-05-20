@@ -22,6 +22,11 @@ class PackedObjects {
         assert(pc != nil)
     }
     
+    init(schema: String, options: CInt) {
+        self.pc = init_packedobjects(schema, 0, options)
+        assert(pc != nil)
+    }
+    
     init(schema: String, bytes: Int, options: CInt) {
         self.pc = init_packedobjects(schema, bytes, options)
         assert(pc != nil)

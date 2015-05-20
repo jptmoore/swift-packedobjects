@@ -43,7 +43,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func outputSelection(schemaFile: String, xml: String) {
-        let po = PackedObjects(schema: schemaFile)
+        let po = PackedObjects(schema: schemaFile, options: 1)
         if let data = po.encode(xml) as NSData? {
             if let result = po.decode(data) as String? {
                 xmlView.text = result
@@ -52,7 +52,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func performTest(schemaFile: String, xml: String, iter: Int) {
-        let po = PackedObjects(schema: schemaFile)
+        let po = PackedObjects(schema: schemaFile, options: 1)
         let start = NSDate()
         for _ in 1...iter {
             let data = po.encode(xml)
