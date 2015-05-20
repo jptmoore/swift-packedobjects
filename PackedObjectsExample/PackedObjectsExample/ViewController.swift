@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
 
     
     @IBOutlet weak var xmlView: UITextView!
     @IBOutlet weak var xmlPicker: UIPickerView!
+    @IBOutlet weak var iterTextField: UITextField!
+
     
     var xmlfiles : [String] = []
     var path : String = ""
@@ -20,7 +22,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var xml : String = ""
     
     @IBAction func runTest(sender: AnyObject) {
-        performTest(schemaFile, xml: xml)
+        let times:Int? = iterTextField.text.toInt()
+        if (times != nil) {
+            performTest(schemaFile, xml: xml, iter: times!)
+        }
+        
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -45,16 +51,17 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         }
     }
     
-    func performTest(schemaFile: String, xml: String) {
+    func performTest(schemaFile: String, xml: String, iter: Int) {
         let po = PackedObjects(schema: schemaFile)
         let start = NSDate()
-        for _ in 1...1000 {
+        for _ in 1...iter {
             let data = po.encode(xml)
             let result = po.decode(data!)
         }
         let end = NSDate()
-        let timeInterval: Double = end.timeIntervalSinceDate(start)
-        xmlView.text = "Test completed in \(timeInterval) seconds\n"
+        var timeInterval: Double = end.timeIntervalSinceDate(start)
+        timeInterval = Double(round(1000*timeInterval)/1000)
+        xmlView.text = "Completed \(iter) iterations in \(timeInterval) seconds\n"
         
     }
     
@@ -75,8 +82,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         path = NSBundle.mainBundle().bundlePath + "/"
         let files = fileManager.contentsOfDirectoryAtPath(path, error: nil) as? [String]
         xmlfiles = files!.filter({$0.hasSuffix(".xml")})
-
+        
+        // make default selection
+        xmlPicker.selectRow(4, inComponent: 0, animated: true)
+        pickerView(xmlPicker, didSelectRow: 4, inComponent: 0)
+        
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

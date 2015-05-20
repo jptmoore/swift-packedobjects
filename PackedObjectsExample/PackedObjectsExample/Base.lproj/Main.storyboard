@@ -42,6 +42,14 @@
                                     <action selector="runTest:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eRL-RI-lmu"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1000" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eo7-vg-4Uh">
+                                <rect key="frame" x="16" y="551" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Lqw-Ec-seX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -49,14 +57,17 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jKv-fC-inW" secondAttribute="bottom" constant="65" id="5zE-4u-mhv"/>
                             <constraint firstItem="jKv-fC-inW" firstAttribute="top" secondItem="TiD-fS-8tX" secondAttribute="bottom" constant="8" symbolic="YES" id="Fuh-1l-ryt"/>
                             <constraint firstItem="jKv-fC-inW" firstAttribute="centerX" secondItem="TiD-fS-8tX" secondAttribute="centerX" id="HJR-qW-52R"/>
+                            <constraint firstItem="eo7-vg-4Uh" firstAttribute="baseline" secondItem="UC8-4a-wDL" secondAttribute="baseline" id="QvI-dB-AlM"/>
                             <constraint firstItem="jKv-fC-inW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Wrm-NC-0Tk"/>
                             <constraint firstItem="UC8-4a-wDL" firstAttribute="trailing" secondItem="jKv-fC-inW" secondAttribute="trailing" id="XIO-3d-7PK"/>
                             <constraint firstItem="TiD-fS-8tX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="fTA-0e-4aW"/>
                             <constraint firstItem="TiD-fS-8tX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="pAy-p2-Mm6"/>
+                            <constraint firstItem="eo7-vg-4Uh" firstAttribute="leading" secondItem="jKv-fC-inW" secondAttribute="leading" id="sgg-qe-sUT"/>
                             <constraint firstAttribute="bottom" secondItem="UC8-4a-wDL" secondAttribute="bottom" constant="20" symbolic="YES" id="vbd-8w-QTF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="iterTextField" destination="eo7-vg-4Uh" id="Fhd-Zr-Vxm"/>
                         <outlet property="xmlPicker" destination="TiD-fS-8tX" id="bcQ-dP-w51"/>
                         <outlet property="xmlView" destination="jKv-fC-inW" id="voi-AS-nJ5"/>
                     </connections>
