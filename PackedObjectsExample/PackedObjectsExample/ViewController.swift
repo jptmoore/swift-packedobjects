@@ -16,6 +16,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     var xmlfiles : [String] = []
     var path : String = ""
+    var schemaFile : String = ""
+    var xml : String = ""
+    
+    @IBAction func runTest(sender: AnyObject) {
+        performTest(schemaFile, xml: xml)
+    }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
@@ -30,19 +36,34 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         return xmlfiles[row]
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let filename = xmlfiles[row]
-        let prefix = split(filename) {$0 == "."}[0]
-        
-        let xml = String(contentsOfFile: path+filename, encoding: NSUTF8StringEncoding, error: nil)
-        let schemaFile = path + prefix + ".xsd"
-        
+    func outputSelection(schemaFile: String, xml: String) {
         let po = PackedObjects(schema: schemaFile)
-        if let data = po.encode(xml!) as NSData? {
+        if let data = po.encode(xml) as NSData? {
             if let result = po.decode(data) as String? {
                 xmlView.text = result
             }
         }
+    }
+    
+    func performTest(schemaFile: String, xml: String) {
+        let po = PackedObjects(schema: schemaFile)
+        let start = NSDate()
+        for _ in 1...1000 {
+            let data = po.encode(xml)
+            let result = po.decode(data!)
+        }
+        let end = NSDate()
+        let timeInterval: Double = end.timeIntervalSinceDate(start)
+        xmlView.text = "Test completed in \(timeInterval) seconds\n"
+        
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let filename = xmlfiles[row]
+        let prefix = split(filename) {$0 == "."}[0]
+        xml = String(contentsOfFile: path+filename, encoding: NSUTF8StringEncoding, error: nil)!
+        schemaFile = path + prefix + ".xsd"
+        outputSelection(schemaFile, xml: xml)
     }
     
     override func viewDidLoad() {
