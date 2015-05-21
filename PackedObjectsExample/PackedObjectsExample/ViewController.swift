@@ -22,11 +22,21 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var xml : String = ""
     
     @IBAction func runTest(sender: AnyObject) {
+        self.iterTextField.resignFirstResponder()
         let times:Int? = iterTextField.text.toInt()
         if (times != nil) {
             performTest(schemaFile, xml: xml, iter: times!)
         }
         
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
