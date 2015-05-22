@@ -5,7 +5,7 @@ Email:21161937@student.uwl.ac.uk
 Student at University of West London
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:include schemaLocation="http://zedstar.org/xml/schema/packedobjectsDataTypes.xsd"/>
+  <xs:include schemaLocation="packedobjectsDataTypes.xsd"/>
 
   <!--******************Global Variables*********************-->
   <xs:simpleType name="StringLength">
