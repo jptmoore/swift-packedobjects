@@ -69,6 +69,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         var encodeTime : Double
         var decodeTime : Double
         var data : NSData?
+        var result : String?
         
         start = NSDate()
         for _ in 1...iter {
@@ -79,7 +80,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         encodeTime = Double(round(1000*encodeTime)/1000)
         start = NSDate()
         for _ in 1...iter {
-            let result = po.decode(data!)
+            result = po.decode(data!)
         }
         end = NSDate()
         decodeTime = end.timeIntervalSinceDate(start)
