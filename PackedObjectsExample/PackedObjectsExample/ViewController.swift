@@ -63,16 +63,33 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     func performTest(schemaFile: String, xml: String, iter: Int) {
         let po = PackedObjects(schema: schemaFile)
-        let start = NSDate()
+        
+        var start : NSDate
+        var end : NSDate
+        var encodeTime : Double
+        var decodeTime : Double
+        var data : NSData?
+        
+        start = NSDate()
         for _ in 1...iter {
-            let data = po.encode(xml)
+            data = po.encode(xml)
+        }
+        end = NSDate()
+        encodeTime = end.timeIntervalSinceDate(start)
+        encodeTime = Double(round(1000*encodeTime)/1000)
+        start = NSDate()
+        for _ in 1...iter {
             let result = po.decode(data!)
         }
-        let end = NSDate()
-        var timeInterval: Double = end.timeIntervalSinceDate(start)
-        timeInterval = Double(round(1000*timeInterval)/1000)
-        xmlView.text = "Completed \(iter) iterations in \(timeInterval) seconds\n"
+        end = NSDate()
+        decodeTime = end.timeIntervalSinceDate(start)
+        decodeTime = Double(round(1000*decodeTime)/1000)
         
+        let compressionRatio = 1 - (Double(po.bytes) / Double(count(xml)))
+        let compressionPercentage = Int(round(compressionRatio*100))
+        
+        xmlView.text = "Completed \(iter) iterations in \(encodeTime+decodeTime) seconds where it took \(encodeTime) seconds to complete the encode cycle and \(decodeTime) seconds to complete the decode cycle.\n\n"
+        xmlView.text = xmlView.text + "Compressed original file of \(count(xml)) bytes down to \(po.bytes) bytes with a compresion ratio of \(compressionPercentage)%"
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
